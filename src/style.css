@@ -1,0 +1,172 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    background-color: rgb(180, 181, 180);
+    height: 100%;
+}
+.svgIcon {
+    width: 22px;
+    height: 22px;
+    fill: rgb(226, 141, 43);
+}
+#logo-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+.logo-name {
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+}
+#btn-group {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+.nav_link {
+    width: 120px;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#content {
+    flex: 1;
+}
+
+/* Home */
+
+.grid-container {
+    margin: 0 5%;
+}
+.home-text {
+    text-align: center;
+    h1 {
+        font-size: 3.8rem;
+        color: brown;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: 2px;
+        line-height: 1.4;
+    }
+}
+.img-div {
+    text-align: center;
+    position: relative;
+    
+}
+.home-main {
+    border-radius: 90% 100% 70% 10%;
+    height: 380px;
+}
+
+/* Menu */
+.fastFood {
+    text-align: center;
+    font-weight: 900;
+    color: royalblue;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+.div-container {
+    text-align: center;
+    h1 {
+        font-weight: bolder;
+        color: red;
+        margin-top: 10px;
+    }
+    span {
+        word-spacing: 5px;
+        color: green;
+        font-weight: bold;        
+    }
+}
+.food-div .food-img {
+    width: 450px;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+/* Contact */
+#map {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+}
+#div-address {
+    height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: honeydew;
+    color: black;
+    padding-left: 30px;
+
+    a {
+        text-decoration: none;
+        pointer-events: none;
+        color: darkblue;
+    }
+}
+#chat-div {
+    margin-bottom: 30px;
+}
+#contact {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+/* Animation */
+.scroolAnimation {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear {
+    opacity: 0;
+    transform: translateY(100px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.image-scroll {
+    animation: image-scroll both;
+    animation-timeline: view(10% 5%);
+}
+@keyframes image-scroll {
+    from {
+        filter: saturate(0) contrast(4) brightness(0.1);
+        opacity: 0;
+        scale: 0.9;
+        transform: translateY(0) scale(0.9);
+    }
+    to {
+        filter: none;
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: darkslategrey;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+}

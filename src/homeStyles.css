@@ -1,0 +1,23 @@
+
+.grid-container {
+    margin: 0 5%;
+}
+
+.home-text {
+    text-align: center;
+    h1 {
+        font-size: 4.1rem;
+        color: brown;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+.img-div {
+    text-align: center;
+    position: relative;
+    
+    img {
+        border-radius: 90% 100% 70% 10%;
+    }
+}
