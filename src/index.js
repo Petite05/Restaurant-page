@@ -1,4 +1,3 @@
-
 import "./style.css";
 import { loadHome } from "./home.js";
 import { menuFunction } from "./menu.js";
